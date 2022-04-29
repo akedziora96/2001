@@ -4,12 +4,14 @@ import random
 
 def twothousandone_v1():
 
-    c_max_dice_1, c_max_dice_2 = computer_choice()
-    p_max_dice_1, p_max_dice_2 = player_choice()
+    print("Chose between dices: 'D3', 'D4', 'D6', 'D8', 'D10', 'D12', 'D20', 'D100'")
 
     player_res, computer_res = 0, 0
 
     while player_res < 2001 and computer_res < 2001:
+
+        c_max_dice_1, c_max_dice_2 = computer_choice()
+        p_max_dice_1, p_max_dice_2 = player_choice()
 
         player_throw = random.randint(1, p_max_dice_1) + random.randint(1, p_max_dice_2)
         if player_throw == 7:
