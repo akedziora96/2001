@@ -38,4 +38,5 @@ def twothousandone_v1():
               f"Computer result: {computer_res}, last throw: {computer_throw}")
 
 
-twothousandone_v1()
+if __name__ == '__main__':
+    twothousandone_v1()
